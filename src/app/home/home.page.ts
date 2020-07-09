@@ -63,7 +63,7 @@ export class HomePage {
           id INTEGER PRIMARY KEY,
           latitude varchar(12),
           longitude varchar(12),
-          created_at datetime,
+          created_at datetime
     )`, [])
       .then(() => {
         console.log('Table Created!');
