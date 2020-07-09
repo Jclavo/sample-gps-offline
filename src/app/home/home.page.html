@@ -1,0 +1,70 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Sample SQLite
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <ion-list>
+    <ion-item *ngFor="let coordenates of coordenatesList">
+
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            Latitude:
+            <ion-label>
+              {{ coordenates.latitude }}
+            </ion-label>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            Longitude:
+            <ion-label>
+              {{ coordenates.longitude }}
+            </ion-label>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            Date:
+            <ion-label>
+              {{ coordenates.created_at }}
+            </ion-label>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+
+
+      <!-- <ion-button title="Edit" [routerLink]="['/employee', employee.employee_id]"> -->
+      <!-- <ion-button title="Edit" (click)="updateEmployee(employee.employee_id)">
+        <ion-icon slot="icon-only" name="construct"></ion-icon>
+      </ion-button>
+
+      <ion-button title="Delete" (click)="willDeleteEmployee(employee.employee_id, employee.fullName )" color="danger">
+        <ion-icon slot="icon-only" name="trash"></ion-icon>
+      </ion-button> -->
+
+    </ion-item>
+  </ion-list>
+
+
+  <ion-fab slot="fixed" horizontal="end" vertical="bottom">
+    <ion-fab-button>Options</ion-fab-button>
+    <ion-fab-list side="top">
+      <ion-fab-button (click)="truncate()">
+        <ion-icon name="trash"></ion-icon>
+      </ion-fab-button>
+      <ion-fab-button (click)="getCurrentLocation()">
+        <ion-icon name="locate"></ion-icon>
+      </ion-fab-button>
+      <!-- <ion-fab-button>
+        <ion-icon name="logo-ionic"></ion-icon>
+      </ion-fab-button> -->
+    </ion-fab-list>
+  </ion-fab>
+ 
+</ion-content>

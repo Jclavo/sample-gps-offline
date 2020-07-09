@@ -1,0 +1,7 @@
+{
+  "name": "sample-SQLITE",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}
