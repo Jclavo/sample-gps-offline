@@ -29,7 +29,7 @@
     "cordova-android": "8.1.0",
     "cordova-plugin-geolocation": "^4.0.2",
     "cordova-sqlite-storage": "^5.0.0",
-    "cordova.plugins.diagnostic": "^5.0.2",
+    "cordova.plugins.diagnostic": "^7.1.2",
     "rxjs": "~6.5.1",
     "tslib": "^1.10.0",
     "zone.js": "~0.10.2"
